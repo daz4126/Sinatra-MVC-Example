@@ -85,8 +85,8 @@ html
 h1 Notes
 -if @notes.any?
   ul.notes
-  - @notes.each do |note|
-    li <a href="/notes/#{note.id}">#{note.title}</a>
+    - @notes.each do |note|
+      li <a href="/notes/#{note.id}">#{note.title}</a>
 - else
   p No Notes have been created yet
 
